@@ -1,2 +1,2 @@
 # kope
-app to deal with stresses
+ストレス管理アプリ
