@@ -3,6 +3,9 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  /* background */
+  --ion-background-color: #f9f9f9;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,6 +77,38 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** main color **/
+  --ion-color-main: #4DD8D9;
+  --ion-color-main-rgb: 77, 216, 217;
+  --ion-color-main-contrast: #ffffff;
+  --ion-color-main-contrast-rgb: 255, 255, 255;
+  --ion-color-main-shade: #45c2c3;
+  --ion-color-main-tint: #5edbdc;
+  
+  /** main deep **/
+  --ion-color-main_deep: #3A95A5;
+  --ion-color-main_deep-rgb: 58, 149, 165;
+  --ion-color-main_deep-contrast: #ffffff;
+  --ion-color-main_deep-contrast-rgb: 255, 255, 255;
+  --ion-color-main_deep-shade: #348694;
+  --ion-color-main_deep-tint: #4d9fae;
+  
+  /** main light **/
+  --ion-color-main_deep: #D0FFF8;
+  --ion-color-main_deep-rgb: 208, 255, 248;
+  --ion-color-main_deep-contrast: #3A95A5;
+  --ion-color-main_deep-contrast-rgb: 58, 149, 165;
+  --ion-color-main_deep-shade: #bbe5df;
+  --ion-color-main_deep-tint: #d4fff8;
+  
+  /** sub **/
+  --ion-color-sub: #ffb084;
+  --ion-color-sub-rgb: 255,176,132;
+  --ion-color-sub-contrast: #ffffff;
+  --ion-color-sub-contrast-rgb: 255, 255, 255;
+  --ion-color-sub-shade: #e59e76;
+  --ion-color-sub-tint: #ffb790;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -229,4 +264,21 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+.text-main {
+  color: var(--ion-color-main);
+}
+
+ion-tab-bar {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
+
+ion-tab-button {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  --color-selected: var(--ion-color-main);
 }
